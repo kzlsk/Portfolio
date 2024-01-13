@@ -50,7 +50,7 @@
             <h1 class="header__logo__title" ><a href="#">kzlsk</a></h1>
         </div>
         <!-- menu -->
-        <nav>
+        <nav class="header__nav">
             <ul class="header__menu">
             <li><a class="header__menu__item active"href="#profile">PROFILE</a></li>
             <li><a class="header__menu__item"href="#about">ABOUT ME</a></li>
@@ -65,50 +65,53 @@
     <main>
         <!-- profile -->
         <section id="profile">
-            <img src="img/profile-remove.png" alt="kzlsk's profile" height="400" width="400"/>
-            <h2>Hello👋🏻 <br>I&#39;m a Frontend Developer, Rina&#33;</h2>
-            <h4>
+            <img class="profile__img" src="img/profile-remove.png" alt="kzlsk's profile" height="400" width="400"/>
+            <h2 class="profile__title">Hello👋🏻 <br>I&#39;m a <strong class="profile__title--strong">Frontend Developer</strong>, Rina&#33;</h2>
+            <h4 class="profile__description">
                 &#34;Passionate Frontend Developer&#34;<br>
                 끊임없이 사용자 경험을 개선하고자 하는 열정적인 프론트엔드 개발자입니다.
             </h4>
-            <a href="#contact">Contact Me&#33;</a>
+            <a class="profile__contact" href="#contact">Contact Me&#33;</a>
         </section>
 
         <!-- about me -->
-        <section id="about">
-            <h2>ABOUT ME</h2>
-            <ul>
-                <li>사용자 중심의 인터페이스를 만들어내는 것에 큰 흥미를 느끼며, 깔끔하고 효율적인
-                    코드를 통해 웹 기술의 최신 동향을 따라가고 있는 프론트엔드 개발자입니다.</li>
-                <li>끊임없는 학습과 협업을 통해 성장하는 것에 힘입어, 미래의 프론트엔드 개발자로서
-                    새로운 도전을 기대하고 있습니다</li>
-                <li>사용자와 개발자 간의 다리 역할을 할 수 있는 개발자로서 
-                    기회에 대한 열린 마음을 가지고 있습니다. </li>
+        <section id="about" class="section max-container">
+            <h2 class="title">ABOUT ME</h2>
+            <ul class="description">
+                <p>
+                    - 사용자 중심의 인터페이스를 만들어내는 것에 큰 흥미를 느끼며, 깔끔하고 효율적인
+                    코드를 통해 웹 기술의 최신 동향을 따라가고 있는 프론트엔드 개발자입니다. <br>
+                    - 끊임없는 학습과 협업을 통해 성장하는 것에 힘입어, 미래의 프론트엔드 개발자로서
+                    새로운 도전을 기대하고 있습니다. <br>
+                    - 사용자와 개발자 간의 다리 역할을 할 수 있는 개발자로서 
+                    기회에 대한 열린 마음을 가지고 있습니다. <br>
+                </p>
+                
             </ul>
 
-            <ul>
-                <li>
-                    <i class="fa-solid fa-f"></i>
+            <ul class="majors">
+                <li class="major">
+                    <i class="fa-solid fa-f major__icon"></i>
                     <p>Front-end</p>
                     <p>HTML, CSS, Javascript, React</p>
                 </li>
-                <li>
-                    <i class="fa-solid fa-m"></i>
+                <li class="major"> 
+                    <i class="fa-solid fa-m major__icon"></i>
                     <p>Mobile</p>
                     <p>Android, Java</p>
                 </li>
-                <li>
-                    <i class="fa-solid fa-b"></i>
+                <li class="major">
+                    <i class="fa-solid fa-b major__icon"></i>
                     <p>Back-end</p>
                     <p>Java, Node.js, Python, MySQL, MongoDB</p>
                 </li>
             </ul>
-            <ul>
-                <li>
-                    <img src="img/dcu.png" alt="대구가톨릭대학교">
+            <ul class="university">
+                <li class="dcu">
+                    <img class="dcu__logo" src="img/dcu.png" alt="대구가톨릭대학교">
                     <div>
-                        <p>대구가톨릭대학교 컴퓨터공학전공 졸업</p>
-                        <p>2020 Mar - 2024 Aug</p>
+                        <p class="dcu__name">대구가톨릭대학교 컴퓨터공학전공 졸업</p>
+                        <p class="dcu__period">2020 Mar - 2024 Aug</p>
                     </div>
                 </li>
             </ul>
@@ -116,146 +119,156 @@
         </section>
 
         <!-- skills -->
-        <section id="skills">
-            <h2>MY SKILLS</h2>
-            <p>Skills & Attributes</p>
-            <p>저는 끊임없는 학습과 성장에 힘입어 더 나은 사용자 경험을 
-                제공하기 위해 최신 기술을 습득하고 있습니다.
-            </p>
-            <div>
-                <section>
-                    <h3>Coding Skills</h3>
-                    <ul>
-                        <li>
-                            <div>
-                                <span>HTML</span>
-                                <span>80%</span>
-                            </div>
-                            <div>
-                                <div style="width: 80%"></div>
-                            </div>
-                        </li>
+        <section id="skills" class="section"> 
+            <div class="max-container">
+                <h2 class="title">MY SKILLS</h2>
+                <p class="description">Skills & Attributes</p>
+                <p>끊임없는 학습과 성장에 힘입어 더 나은 사용자 경험을 
+                    제공하기 위해 최신 기술을 습득하고 있습니다.
+                </p>
+                <div class="skills">
+                    <section class="skills__coding">
+                        <h3 class="skills__title">Coding Skills</h3>
+                        <ul>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>HTML</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 80%"></div>
+                                </div>
+                            </li>
+    
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>CSS</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 80%"></div>
+                                </div>
+                            </li>
+    
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>Javascript</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 70%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
 
-                        <li>
-                            <div>
-                                <span>CSS</span>
-                                <span>80%</span>
-                            </div>
-                            <div>
-                                <div style="width: 80%"></div>
-                            </div>
-                        </li>
+                    <section class="skills__tools">
+                        <h3 class="skills__title">Tools</h3>
+                        <ul>
+                            <li>Visual Studio Code</li>
+                            <li>IntelliJ</li>
+                            <li>Android Studio Code</li>
+                            <li>Eclipse</li>
+                        </ul>
+                    </section>
 
-                        <li>
-                            <div>
-                                <span>Javascript</span>
-                                <span>70%</span>
-                            </div>
-                            <div>
-                                <div style="width: 70%"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h3>Tools</h3>
-                    <ul>
-                        <li>Visual Studio Code</li>
-                        <li>IntelliJ</li>
-                        <li>Android Studio Code</li>
-                        <li>Eclipse</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h3>Etc</h3>
-                    <ul>
-                        <li>Git</li>
-                        <li>Notion</li>
-                        <li>Figma</li>
-                    </ul>
-                </section>
+                    <section class="skills__etc">
+                        <h3 class="skills__title">Etc</h3>
+                        <ul>
+                            <li>Git</li>
+                            <li>Notion</li>
+                            <li>Figma</li>
+                        </ul>
+                    </section>
+                </div>
             </div>
         </section>
 
         <!-- projects -->
-        <section id="projects">
-            <h2>MY PROJECTS</h2>
-            <ul>
-                <li><button>All <span>4</span></button></li>
-                <li><button>Front-end <span>2</span></button></li>
-                <li><button>Mobile <span>1</span></button></li>
-                <li><button>Back-end <span>1</span></button></li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="img/1.png" alt="프로젝트1">
-                        <div>
-                            <h3>Project 1</h3>
-                            <p>description</p>
-                        </div>
-                    </a>
-                </li>
+        <section id="projects" class="section">
+            <div class="max-container">
+                <h2 class="title">MY PROJECTS</h2>
+                <ul class="categories">
+                    <li><button class="category category--selected">All <span class="category__count">4</span></button></li>
+                    <li><button class="category">Front-end <span class="category__count">2</span></button></li>
+                    <li><button class="category">Mobile <span class="category__count">1</span></button></li>
+                    <li><button class="category">Back-end <span class="category__count">1</span></button></li>
+                </ul>
+                <ul class="projects">
+                    <li class="project">
+                        <a href="#" target="_blank">
+                            <img src="img/1.png" alt="프로젝트1" class="project__img" width="300px" height="200px">
+                            <div class="project__metadata">
+                                <h3 class="project__title">Project 1</h3>
+                                <p>description</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="img/2.png" alt="프로젝트2">
-                        <div>
-                            <h3>Project 2</h3>
-                            <p>description</p>
-                        </div>
-                    </a>
-                </li>
+                    <li class="project">
+                        <a href="#" target="_blank">
+                            <img src="img/2.png" alt="프로젝트2" class="project__img" width="300px" height="200px">
+                            <div class="project__metadata">
+                                <h3 class="project__title">Project 2</h3>
+                                <p>description</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="img/3.png" alt="프로젝트3">
-                        <div>
-                            <h3>Project 3</h3>
-                            <p>description</p>
-                        </div>
-                    </a>
-                </li>
+                    <li class="project">
+                        <a href="#" target="_blank">
+                            <img src="img/3.png" alt="프로젝트3" class="project__img" width="300px" height="200px">
+                            <div class="project__metadata">
+                                <h3 class="project__title">Project 3</h3>
+                                <p>description</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="img/4.png" alt="프로젝트4">
-                        <div>
-                            <h3>Project 4</h3>
-                            <p>description</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+                    <li class="project">
+                        <a href="#" target="_blank">
+                            <img src="img/4.png" alt="프로젝트4" class="project__img" width="300px" height="200px">
+                            <div class="project__metadata">
+                                <h3 class="project__title">Project 4</h3>
+                                <p>description</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!-- arrow up > 위로 가기 버튼-->
         <aside>
-            <a href="#" title="위로 가기">
+            <a class="arrow-up" href="#" title="위로 가기">
                 <i class="fa-solid fa-circle-up"></i>
             </a>
         </aside>
     </main>
 
     <!-- footer -->
-    <footer id="contact">
-        <h2>Let&#39;s talk</h2>
-        <i class="fa-brands fa-google"></i>
-        <p>rlaflsk4887@gamil.com</p>
-        <ul>
-            <li><a href="https://github.com/kzlsk" target="_blank" title="my github link">
-                <i class="fa-brands fa-github"></i>
-            </a>
-        </li>
-
-            <li><a href="https://www.instagram.com/k_zllsk/" target="_blank" title="my instagram link">
-                <i class="fa-brands fa-square-instagram"></i>
-            </a>
-        </li>
-        </ul>
-        <p>©Kzlsk Profolio Web Site - All rights reserved</p>
+    <footer id="contact" class="section">
+        <div class="max-container">
+            <h2 class="title">Let&#39;s Talk</h2>
+            <div class="contact__mail">
+                <i class="fa-regular fa-envelope contact__mail__icon"></i>
+                <p class="description">rlaflsk4887@gamil.com</p>
+            </div>
+            <ul class="contact__links">
+                <li>
+                    <a class="contact__link" href="https://github.com/kzlsk" target="_blank" title="my github link">
+                    <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+    
+                <li>
+                    <a class="contact__link" href="https://www.instagram.com/k_zllsk/" target="_blank" title="my instagram link">
+                    <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>© Kzlsk Profolio Web Site - All rights reserved</p>
+        </div>
     </footer>
 </body> 
 </html>
